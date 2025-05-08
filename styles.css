@@ -1,0 +1,110 @@
+/* CSS HEX */
+:root {
+    --veronica: #9a48d0;
+    --blue-munsell: #048ba8;
+    --turquoise: #16e0bd;
+    --raisin-black: #2e282a;
+    --khaki: #b3a394;
+}
+
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    }
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: var(--khaki);
+    color: #2b2839;
+    box-shadow: 0 0 10px 5px black;
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+        */
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    background-image: url("/images/colby_card_img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px var(--blue-munsell);
+}
+
+.avatar:hover {
+    rotate: 360deg;
+    transition: all 0.5s ease-in-out;
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .info-wrap {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+} */
+
+.name {
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.social a {
+    text-decoration: none;
+    color: var(--veronica);
+    font-size: 1.5rem;
+}
+.social a:hover {
+    color: var(--blue-munsell);
+    text-shadow: 0 0 10px var(--blue-munsell);
+    transform: scale(1.6);
+    transition: all 0.3s ease-in-out;
+}
+.social a:active {
+    color: var(--turquoise);
+    text-shadow: 0 0 10px var(--turquoise);
+}
+.social a:focus {
+    outline: 2px solid var(--blue-munsell);
+    outline-offset: 4px;
+}
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
